@@ -6,10 +6,10 @@ Build a developer environment of rails in ubuntu
 Environment
 -----------
 
-Ubuntu Version: Ubuntu Desktop Edition 10.04 LTS 64bit
-Editor: vim
-Ruby version: REE(Ruby Enterprise Edition)
-Web server: apache (Option.)
+    Ubuntu Version: Ubuntu Desktop Edition 10.04 LTS 64bit
+    Editor: vim
+    Ruby version: REE(Ruby Enterprise Edition)
+    Web server: apache (Option.)
 
 Scripts
 -------
