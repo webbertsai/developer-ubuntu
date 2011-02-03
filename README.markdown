@@ -36,5 +36,5 @@ Ruby Enterprise Edition
 
 Add Ruby Enterprise bin to PATH
 
-    echo "export PATH="/usr/local/lib/ruby/gems/1.8/bin:$PATH" >> ~/.profile && . ~/.profile
+    echo 'export PATH="/usr/local/lib/ruby/gems/1.8/bin:$PATH"' >> ~/.profile && . ~/.profile
 
