@@ -1,14 +1,16 @@
 #!/bin/sh
 
+A2ENMOD="/usr/sbin/a2enmod"
 ADDGROUP="/usr/sbin/addgroup"
 APTGET="/usr/bin/apt-get"
 CAT="/bin/cat"
 MKDIR="/bin/mkdir"
+SUDO="/usr/bin/sudo"
 
 # php5 相關
-${APTGET} install -y apache2 mysql-server php5 php5-mysql php5-mcrypt php5-cli
-${MKDIR} -p /etc/php5/apache2
-${CAT} > /etc/php5/apache2/php.ini <<EOF
+${SUDO} ${APTGET} install -y apache2 mysql-server php5 php5-mysql php5-mcrypt php5-cli
+${SUDO} ${MKDIR} -p /etc/php5/apache2
+${SUDO} ${CAT} > /etc/php5/apache2/php.ini <<EOF
 display_errors = Off
 error_log = /home/logs/php-err.log
 expose_php = Off
@@ -38,3 +40,6 @@ apc.enable_cli = 1
 apc.shm_size = 128
 apc.stat_ctime = 1
 EOF
+
+# Enable php5, rewrite, dir module
+${SUDO} ${A2ENMOD} rewrite php5 dir
