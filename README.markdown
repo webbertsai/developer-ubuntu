@@ -14,7 +14,7 @@ Environment
 Scripts
 -------
 
-    sudo ./scripts/ror-installer.sh # It can easily build your enviorment
+    ./scripts/ror-installer.sh # It can easily build your enviorment
 
 
 Update and upgrade the system
