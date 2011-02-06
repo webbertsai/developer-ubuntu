@@ -1,10 +1,12 @@
 #!/bin/sh
 
 CAT="/bin/cat"
+FCCACHE="/usr/bin/fc-cache"
 MKDIR="/bin/mkdir"
 MV="/bin/mv"
-WGET="/usr/bin/wget"
+SUDO="/usr/bin/sudo"
 TAR="/bin/tar"
+WGET="/usr/bin/wget"
 
 ${MKDIR} -p ~/.fonts
 ${WGET} 'http://www.gringod.com/wp-upload/MONACO.TTF'
@@ -79,3 +81,6 @@ ${CAT} > ~/.fonts.conf <<EOF
     </match> 
 </fontconfig>
 EOF
+
+# fc-cache flush
+${SUDO} ${FCCACHE} -f
