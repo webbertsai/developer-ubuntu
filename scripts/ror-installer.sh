@@ -6,13 +6,6 @@ GEM="/usr/local/bin/gem" #裝完 ruby 後才會出現
 SUDO="/usr/bin/sudo"
 WGET="/usr/bin/wget"
 
-# init, update packages list
-${SUDO} ${APTGET} update
-${SUDO} ${APTGET} -y, upgrade
-
-# install basic tools
-${SUDO} ${APTGET} -y install vim git-core tig apache2 mysql-server
-
 # install ruby tools
 ${SUDO} ${APTGET} -y install libxml2-dev libxslt-dev libreadline5-dev libmysqlclient16-dev
 
