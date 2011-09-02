@@ -32,7 +32,7 @@ Ruby Enterprise Edition
 -----------------------
 
     wget 'http://rubyforge.org/frs/download.php/71098/ruby-enterprise_1.8.7-2010.02_amd64_ubuntu10.04.deb'
-    sudo pdkg -i ruby-enterprise_1.8.7-2010.02_amd64_ubuntu10.04.deb
+    sudo dpkg -i ruby-enterprise_1.8.7-2010.02_amd64_ubuntu10.04.deb
 
 Add Ruby Enterprise bin to PATH
 
